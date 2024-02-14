@@ -1,0 +1,19 @@
+
+server:
+  port: 8082
+
+spring:
+  application:
+    name: department-service
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/departmentsdb
+    username: root
+    password: Shiva9550
+
+  config:
+    import: "optional:configserver:http://localhost:8088"
+
+
